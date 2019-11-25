@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+
+int main() 
+{
+	int n, count;
+	cin >> n;
+	if (n % 2 == 0) 
+	{
+		for (count = pow(10, (n / 2) - 1); count < pow(10, (n / 2)); ++count)
+		{
+			string temp = to_string(count);
+			reverse(temp.begin(), temp.end());
+			cout << count << temp << endl;
+		}
+	}
+	else 
+	{
+		for (int j = 0; j < 10; ++j)
+			for (count = pow(10, (n / 2) - 1); count < pow(10, (n / 2)); ++count)
+			{
+				string temp = to_string(count);
+				reverse(temp.begin(), temp.end());
+				cout << count << j << temp << endl;
+			}
+	}
+	return 0;
+}
