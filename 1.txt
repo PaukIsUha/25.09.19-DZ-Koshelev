@@ -20,7 +20,7 @@ using namespace std;
 
 int main() 
 {
-	for (long long int k = 38837; true; ++k) 
+	for (long long int k = 38837; k < 38856; ++k) 
 		cout << 2021 * k - 78487894 << " " << 78487894 - 2020 * k << endl;
 	return 0;
 }
